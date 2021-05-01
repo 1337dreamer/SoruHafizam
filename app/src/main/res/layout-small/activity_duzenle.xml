@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".Duzenle">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:text="Ders:"
+        android:textColor="@color/whitee"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="47dp"
+        android:text="Konu:"
+        android:textColor="@color/whitee"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/txtEditDers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/backgroundTint"
+        android:hint="Eklemek İstediğiniz Ders"
+        android:inputType="textPersonName"
+        android:textColor="@color/whitee"
+        android:textColorHint="@color/whitee"
+        android:textCursorDrawable="@color/backgroundTint"
+        android:textSelectHandle="@color/backgroundTint"
+        android:textSelectHandleLeft="@color/backgroundTint"
+        android:textSelectHandleRight="@color/backgroundTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEditKonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/backgroundTint"
+        android:hint="Eklemek İstediğiniz Konu"
+        android:inputType="textPersonName"
+        android:textColor="@color/whitee"
+        android:textColorHint="@color/whitee"
+        android:textCursorDrawable="@color/backgroundTint"
+        android:textSelectHandle="@color/backgroundTint"
+        android:textSelectHandleLeft="@color/backgroundTint"
+        android:textSelectHandleRight="@color/backgroundTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditDers" />
+
+    <ImageView
+        android:id="@+id/cevapUpdate"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/upload" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Çözümünü Güncelle!"
+        android:textColor="@color/whitee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditKonu" />
+
+    <ImageView
+        android:id="@+id/imageViewCevapUp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:text="Tekrar Sebebiniz:"
+        android:textColor="@color/whitee"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCevapUp" />
+
+    <EditText
+        android:id="@+id/txtEditSebep"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/backgroundTint"
+        android:ems="10"
+        android:hint="Sebebiniz"
+        android:inputType="textPersonName"
+        android:textColor="@color/whitee"
+        android:textColorHint="@color/whitee"
+        android:textCursorDrawable="@color/backgroundTint"
+        android:textSelectHandle="@color/backgroundTint"
+        android:textSelectHandleLeft="@color/backgroundTint"
+        android:textSelectHandleRight="@color/backgroundTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCevapUp" />
+
+    <Button
+        android:id="@+id/btnGüncelle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/degrade_buton1"
+        android:text="Ekle"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnİptal" />
+
+    <Button
+        android:id="@+id/btnİptal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/degrade_buton1"
+        android:text="İptal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnGüncelle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

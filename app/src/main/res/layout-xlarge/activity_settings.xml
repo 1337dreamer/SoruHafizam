@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close_resim" />
+
+    <EditText
+        android:id="@+id/txtEditSaat"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="@color/backgroundTint"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Hatırlatılacak Saat"
+        android:textSize="35sp"
+        android:inputType="textPersonName"
+        android:textColor="@color/whitee"
+        android:textColorHint="@color/whitee"
+        android:textCursorDrawable="@color/backgroundTint"
+        android:textSelectHandle="@color/backgroundTint"
+        android:textSelectHandleLeft="@color/backgroundTint"
+        android:textSelectHandleRight="@color/backgroundTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditAd" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="78dp"
+        android:text="Saat :"
+        android:textSize="35sp"
+        android:textColor="@color/whitee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Switch
+        android:id="@+id/switchDark"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="400dp"
+        android:thumbTint="@color/thumbTint"
+        android:trackTint="@color/trackTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditSaat" />
+
+    <EditText
+        android:id="@+id/txtEditAd"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="@color/backgroundTint"
+        android:ems="10"
+        android:hint="Adınızı Giriniz"
+        android:textSize="35sp"
+        android:inputType="textPersonName"
+        android:textColor="#FFF"
+        android:textColorHint="#FFFF"
+        android:textCursorDrawable="@color/backgroundTint"
+        android:textSelectHandle="@color/backgroundTint"
+        android:textSelectHandleLeft="@color/backgroundTint"
+        android:textSelectHandleRight="@color/backgroundTint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Karanlık Mod"
+        android:textSize="35sp"
+        android:textColor="@color/whitee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Adınız :"
+        android:textColor="@color/whitee"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="700dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="400dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditSaat">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardBackground">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:text="İletişime Geç"
+                android:textColor="@color/cardText"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:text="Soru öneri ve görüşleriniz için buraya tıklayabilirsiniz."
+                android:textColor="@color/cardText"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/degrade_buton1"
+        android:text="Kaydet"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

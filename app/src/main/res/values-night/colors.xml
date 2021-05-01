@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#1f1f1f</color>
+    <color name="colorAccent">#1876f2</color>
+
+    <color name="colorbluex">#1f1f1f</color>
+    <color name="colorblue">#1876f2</color>
+    <color name="colorbluee">#1f1f1f</color>
+
+    <color name="white">#000</color>
+    <color name="black">#FFF</color>
+    <color name="kara">#060708</color>
+
+    <color name="whitee">#FFF</color>
+
+    <color name="thumbTint">#1876f2</color>
+    <color name="trackTint">#1876f2</color>
+
+    <color name="backgroundTint">#1876f2</color>
+
+    <color name="cardBackground">#424242</color>
+    <color name="cardText">#FFF</color>
+
+    <color name="snackText">#FFF</color>
+    <color name="snackBackground">#1f1f1f</color>
+    <color name="snackAction">#1876f2</color>
+
+    <color name="red">#d50000</color>
+
+    <color name="searchHint">#424242</color>
+
+    <color name="transparan">#00000000</color>
+</resources>
